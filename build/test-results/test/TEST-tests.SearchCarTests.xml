@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="tests.SearchCarTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-04-22T09:18:05" hostname="EL200403" time="3.95">
+  <properties/>
+  <testcase name="searchCurrentMonthSuccess" classname="tests.SearchCarTests" time="3.95"/>
+  <system-out><![CDATA[12:18:05.295  INFO  tests.TestBase - Name of method -->searchCurrentMonthSuccess
+hello
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
