@@ -135,6 +135,23 @@ public class    HelperCar extends HelperBase{
         int day = now.getDayOfMonth();
         LocalDate from = LocalDate.parse(dateFrom1, DateTimeFormatter.ofPattern("M/d/yyyy"));
         LocalDate to = LocalDate.parse(dateTo1,DateTimeFormatter.ofPattern("M/d/yyyy"));
+        int diffMonth =from.getMonthValue()- month;
+        if(diffMonth>0){
+            clickNextMonthBtn(diffMonth);
+        }
+
+        click(By.xpath("//.cdk-overlay-connected-position-bounding-box' "+from.getYear()+" ']"));
+
+        click(By.xpath("//div[text()=' "+from.getDayOfMonth()+" ']"));
+
+        diffMonth=to.getMonthValue()-from.getMonthValue();
+        if(diffMonth>0){
+            clickNextMonthBtn(diffMonth);
+        }
+        // "//div[text()=' "+from[1]+" ']";
+        String locator = String.format("//div[text()=' %s ']",to.getDayOfMonth());
+        click(By.xpath(locator));
 
     }
+
 }

@@ -20,7 +20,7 @@ public class SearchCarTests extends TestBase{
     }
     @Test
     public void searchAnyPeriodSuccess(){
-        app.getHelperCar().searchAnyPeriod("Tel Aviv, Israel","12/27/2023","2/28/2024");
+        app.getHelperCar().searchAnyPeriod("Tel Aviv, Israel", "2/25/2024", "2/28/2024");
         app.getHelperCar().submit();
         Assert.assertTrue(app.getHelperCar().isListOfCarsAppeared());
     }
